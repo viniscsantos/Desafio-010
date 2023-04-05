@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'Android';
-    src: url('/fontes/idroid.otf')format('opentype')  
+    src: url('../fontes/idroid.otf')format('opentype')  
 }
 @font-face {
     font-family: 'logo';
-    src: url(/fontes/BebasNeue-Regular.ttf)format('truetype');
+    src: url(../fontes/BebasNeue-Regular.ttf)format('truetype');
 }
 :root {
     --cor0: #c5ebd6;
