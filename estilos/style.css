@@ -1,12 +1,14 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'Android';
-    src: url('../fontes/idroid.otf')format('opentype')  
+    src: url('/fontes/idroid.otf')format('opentype');  
 }
 @font-face {
-    font-family: 'logo';
-    src: url(../fontes/BebasNeue-Regular.ttf)format('truetype');
+    font-family: 'Bebas Neue';
+    src: url('/fontes/BebasNeue-Regular.ttf')format('truetype');
 }
+
+
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -15,7 +17,7 @@
     --cor4: #1a5c37;
     --cor5: #063d1e;
 
-    --fonte-destaque: 'logo';
+    --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-padrão: Arial, Helvetica, sans-serif;
     --fonte-android: 'Android', cursive;
 }
@@ -37,11 +39,12 @@ header {
     padding-top: 40px;
     text-align: center;
 }
-header > h1 { 
+header > h1 {
+    font-family: var(--fonte-destaque);
     font-weight: normal;  
     font-size: 3em;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.488);
-    font-family: var(--fonte-destaque);
+    
     margin-bottom: 20px;
 }
 header > p {
